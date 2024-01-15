@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Reviews</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="styles/all.min.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <!-- Template Css File -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="loading d-none">
+      <span class="loader"></span>
+    </div>
+
+    <div class="games">
+      <div class="header">
+        <img src="images/wraper.png" class="w-100" alt="wraper image" />
+      </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-secondary">
+          <div class="container">
+            <img src="images/logo-sm.png" class="logo-img" alt="" />
+            <a class="navbar-brand" href="#">GAME REVIEWS</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >MMORPG</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">SHOOTER</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">SAILING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >PERMADEATH</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">SUPERHERO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">PIXEL</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="games-details py-5">
+          <div class="row g-4" id="show-games"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="details py-4 d-none">
+      <div class="container">
+        <div
+          class="head mb-4 d-flex justify-content-between align-content-center"
+        >
+          <h2 class="m-0">Details Game</h2>
+          <button
+            class="btn btn-outline-secondary text-white fw-bold"
+            id="closeDetails"
+          >
+            X
+          </button>
+        </div>
+        <div class="row g-4" id="details"></div>
+      </div>
+    </div>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        startEvent: "DOMContentLoaded",
+      });
+    </script>
+    <!-- jQuery -->
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <!-- Template JS File -->
+    <script type="module" src="scripts/index.js"></script>
+  </body>
+</html>
